@@ -1,0 +1,41 @@
+{
+  "name": "cross-browser-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:chrome": "webpack --env browser=chrome --watch --progress --config webpack.prod.js",
+    "build:edge": "webpack --env browser=edge --watch --progress --config webpack.prod.js",
+    "build:firefox": "webpack --env browser=firefox --watch --progress --config webpack.prod.js",
+    "build:opera": "webpack --env browser=opera --watch --progress --config webpack.prod.js",
+    "build:safari": "webpack --env browser=safari --watch --progress --config webpack.prod.js",
+    "dev:chrome": "webpack --env browser=chrome --watch --progress --config webpack.dev.js",
+    "dev:edge": "webpack --env browser=edge --watch --progress --config webpack.dev.js",
+    "dev:firefox": "webpack --env browser=firefox --watch --progress --config webpack.dev.js",
+    "dev:opera": "webpack --env browser=opera --watch --progress --config webpack.dev.js",
+    "dev:safari": "webpack --env browser=safari --watch --progress --config webpack.dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
+    "@types/webextension-polyfill": "^0.10.7",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.10.0"
+  }
+}
