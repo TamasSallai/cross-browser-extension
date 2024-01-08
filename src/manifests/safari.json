@@ -1,6 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Cross Browser Extension",
+  "description": "A cross browser extension example.",
   "version": "1.0.0",
   "icons": {
     "16": "icon.png",
