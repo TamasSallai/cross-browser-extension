@@ -14,7 +14,7 @@ module.exports = (env) => {
 
   return {
     entry: {
-      popup: path.resolve('src/popup/popup.tsx'),
+      popup: path.resolve('src/popup.tsx'),
       content: path.resolve('src/content.ts'),
       background: path.resolve('src/background.ts'),
     },
