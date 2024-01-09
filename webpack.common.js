@@ -60,13 +60,17 @@ module.exports = (env) => {
         'process.env.BROWSER': JSON.stringify(env.browser),
       }),
     ],
-
     resolve: {
       extensions: ['.js', '.ts', '.tsx'],
     },
     output: {
       filename: '[name].js',
       path: path.resolve(__dirname, 'dist'),
+    },
+    optimization: {
+      splitChunks: {
+        chunks: 'all',
+      },
     },
   }
 }
